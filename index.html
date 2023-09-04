@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scloud - Cloud Gaming</title>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+<body id="scrolling">
+
+  <div class="container-fluid p-0" id="blur">
+    <!-- header and navabar starts -->
+    <div class="container-fluid m-0" style="background-color: rgb(128,94,240);">
+    <div class="container m-0 p-0">
+        <header class="d-flex flex-wrap justify-content-center py-2">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-light text-decoration-none">
+            <span class="fs-6 etxt-light">Tune in to Xcloud befond at CES Cloud Gaming 00d:07h:39m:44s</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link" aria-current="page"><i class="fa-brands fa-facebook"></i>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          </ul>
+        </header>
+      </div>
+    </div>
+
+<nav class="navbar navbar-expand-xl m-0 text-light py-4" style="background-color: rgb(12,13,17);">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-5 me-0 w-25" href="#"><img src="img/logo.png" id="logo" class="w-50" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-0 w-100 d-flex justify-content-start  me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-light text-uppercase px-3 fw-bold" aria-current="page" href="#">Home <i data-feather="chevron-down"></i></a>
+          <ul class="navbar-nav d-flex flex-column" id="homedrop">
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">main home</a></li>
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">cloud game</a></li>
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">online gaming</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light text-uppercase px-3 fw-bold" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light text-uppercase px-3 fw-bold" href="#">games</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light text-uppercase px-3 fw-bold" href="#">page <i data-feather="chevron-down"></i></a>
+          <ul class="navbar-nav d-flex flex-column" id="homedrop">
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">prizing plan</a></li>
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">get started</a></li>
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">how to play</a></li>
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">support</a></li>
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">download</a></li>
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">contact us</a></li>
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">404</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light text-uppercase px-3 fw-bold" href="#">blog <i data-feather="chevron-down"></i></a>
+          <ul class="navbar-nav d-flex flex-column" id="homedrop">
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">grid style</a></li>
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">blog sidebar</a></li>
+            <li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold fs-6" href="#">single blog</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-flex w-75 justify-content-end align-items-center" id="searchbtns">
+        <button class="bg-transparent border-0 text-light" onclick="searchBar1(); return true;"><i data-feather="search"></i></button> 
+        <button class="btn play-btn ms-4 btn-lg" type="submit">Play Now</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- header and navbar ends -->
+
+
+<!-- main image of bg starts -->
+
+<div class="container-fluid overflow-hidden p-0 m-0">
+<div class="container-fluid position-relative p-0" id="mainbg">
+  <div class="container p-0 text-center h-100 d-flex flex-column justify-content-center align-items-center">
+    <img src="img/logo-2.png" class="position-relative reveal" width="200rem" alt="">
+    <h1 class=" position-relative text-light text-uppercase fw-bold display-5 py-4 reveal">cloud gaming html <br> template</h1>
+    <a href="#" class="btn position-relative play-btn text-uppercase btn-sm reveal">purchase now</a>
+  </div> 
+</div>
+</div>
+
+<!-- main image of bg ends -->
+
+
+<!--second container starts -->
+
+  <div class="container-fluid py-5 px-5" style="background-color: rgb(12,13,17);">
+      <h1 class="fw-bold text-light text-uppercase display-4 pt-5 reveal">play any game any where</h1>
+      <p class="fs-5 pt-3 pb-5" style="color: rgb(189,198,198) !important;">There are many variations of passages of Lorem
+        Ipsum
+        available, but the majority have <br> suffered injected humour, or randomised words which don't
+        look
+        even slightly believable. If you <br> are goingto use consectetur. Bibendum est ultricies integer
+        quis auct elit sed.</p>
+  </div>
+
+<!-- second container ends -->
+
+
+<!-- third container starts -->
+
+  <div class="container-fluid p-0">
+    <img src="img/2.jpg" class="img-fluid" alt="">
+  </div>
+
+<!-- third container ends -->
+
+
+<!-- fourth container starts -->
+
+<div class="container-fluid p-0 py-5" style="background-color: rgb(12,13,17) !important;">
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="img/3.png" class="d-block mx-lg-auto img-fluid reveal" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-light lh-1 mb-3 pb-2 reveal">EXPERIENCE GAMING WITH NO LIMITS</h1>
+        <p class="lead text-light border-bottom pb-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more or less normal English</p>
+        <div class="d-grid gap-5 d-md-flex py-5 justify-content-md-start">
+         <a href="#" class="text-decoration-none reveal"><i data-feather="check-circle" style="color: rgb(128,94,240);"></i> <span class="text-light ms-2 fw-bold">24/7 SUPPORT</span></a>
+         <a href="#" class="text-decoration-none reveal"><i data-feather="check-circle" style="color: rgb(128,94,240);"></i> <span class="text-light fw-bold">OFFERS & CARE</span></a>
+        </div>
+        <a href="#" class="btn play-btn reveal">PLAY NOW</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fourth container ends -->
+
+
+
+<!-- fifth container starts -->
+
+  <div class="container-fluid pb-5" style="background-color: rgb(12,13,17) !important;">
+    <marquee behavior="scroll" class="pb-5" direction="left">
+      <h1 class="text-light fw-bold display-1 text-uppercase pb-5">esports in word now play the next generation </h1>
+    </marquee>
+  </div>
+
+<!-- fifth container ends -->
+
+
+<!-- sixth container starts -->
+
+  <div class="container-fluid overflow-hidden p-0">
+    <div class="container-fluid p-0" id="bg2">
+      <div class="container-fluid">
+        <div class="container-fluid col-xxl-12 px-4 py-5 position-relative">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-12 col-lg-6">
+              <div class="container d-flex border-bottom pb-5">
+                <i class="fa-solid fa-headset display-1 me-5 reveal" style="color: rgb(128,94,240);"></i>
+                <div>
+                <h1 class="text-light fw-bold fs-2 reveal">HIGH-END GAMING</h1>
+                <p class="fs-5" style="color: rgb(184,195,198);">It is a long established fact that a reader of a page when looking at its layout. The point of using Lorem Ipsum is that it have evolved over the years, sometimes has a more.</p>
+              </div>
+              </div>
+              <div class="container d-flex border-bottom pb-5 mt-5">
+                <i class="fa-solid fa-gamepad display-1 me-5 reveal" style="color: rgb(128,94,240);"></i>
+                <div>
+                <h1 class="text-light fw-bold fs-2 reveal">JOIN THE COMMUNITY</h1>
+                <p class="fs-5" style="color: rgb(184,195,198);">It is a long established fact that a reader of a page when looking at its layout. The point of using Lorem Ipsum is that it have evolved over the years, sometimes has a more.</p>
+              </div>
+              </div>
+              <div class="container d-flex border-bottom pb-5 mt-5">
+                <i class="fa-solid fa-mug-hot display-1 me-5 reveal" style="color: rgb(128,94,240);"></i>
+                <div>
+                <h1 class="text-light fw-bold fs-2 reveal">A LOOK INTO ROADMAP</h1>
+                <p class="fs-5" style="color: rgb(184,195,198);">It is a long established fact that a reader of a page when looking at its layout. The point of using Lorem Ipsum is that it have evolved over the years, sometimes has a more.</p>
+              </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pt-5">
+              <h1 class="display-4 fw-bold text-light lh-1 mb-3 py-5 reveal">CONNECT AND PLAY <br> YOUR GAMES</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- sixth container ends -->
+
+
+<!-- seventh container starts -->
+
+  <div class="container-fluid py-5 px-0" style="background-color: rgb(12,13,17);">
+    <marquee behavior="alternate" direction="left" loop="10" scrollamount="15">
+      <img src="img/slide1.1.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.2.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.3.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.4.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.5.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.1.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.2.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.3.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.4.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.5.jpg" class="w-25 mx-1" alt="">
+    </marquee>
+
+    <marquee behavior="alternate" direction="left" loop="10" scrollamount="15">
+      <img src="img/slide2.1.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide2.2.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide2.3.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide2.4.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide2.5.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide2.1.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide2.2.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide2.3.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide2.4.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide2.5.jpg" class="w-25 mx-1" alt="">
+    </marquee>
+
+    <marquee behavior="alternate" direction="left" loop="10" scrollamount="15">
+      <img src="img/slide1.2.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.3.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.4.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.5.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.5.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.1.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.1.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.2.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.3.jpg" class="w-25 mx-1" alt="">
+      <img src="img/slide1.4.jpg" class="w-25 mx-1" alt="">
+    </marquee>
+  </div>
+
+<!-- seventh container ends -->
+
+
+
+<!-- eight container starts-->
+
+  <div class="container-fluid p-0 py-5" style="background-color: rgb(12,13,17);">
+    <h1 class="fw-bold text-light display-4 text-center py-5 reveal">CLOUD GAMING PROCESS</h1>
+    <div class="container-fluid col-xxl-12 px-4 py-5 text-light">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-lg-7">
+          <h1 class="display-6 fw-bold text-light lh-1 mb-3 reveal">1. CREATE YOUR ACCOUNT</h1>
+          <p class="lead pt-2" style="color: rgb(189,198,198);">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed</p>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-5">
+          <img src="img/img2.jpg" class="d-block mx-lg-auto img-fluid reveal" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid col-xxl-12 px-4 py-5 text-light">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-5">
+          <img src="img/img1.jpg" class="d-block mx-lg-auto img-fluid reveal" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-7">
+          <h1 class="display-6 fw-bold text-light lh-1 mb-3 reveal">2. DOWNLOAD THE APP</h1>
+          <p class="lead pt-2" style="color: rgb(189,198,198);">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid col-xxl-12 px-4 py-5 text-light">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-lg-7">
+          <h1 class="display-6 fw-bold text-light lh-1 mb-3 reveal">3. LINK YOUR GAME LIBRARY</h1>
+          <p class="lead pt-2" style="color: rgb(189,198,198);">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed</p>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-5">
+          <img src="img/img3.jpg" class="d-block mx-lg-auto img-fluid reveal" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- eight container ends -->
+
+
+
+<!-- ninth container starts -->
+
+<div class="container-fluid overflow-hidden p-0">
+  <div class="container-fluid p-0 py-5" id="bgimg5">
+    <div class="container-fluid p-0 h-100 d-flex align-items-center justify-content-center flex-column">
+        <h1 class="text-center fw-bold text-light display-3 position-relative reveal">CLOUD GAMING ON ALL <br> DEVICES</h1>
+        <div class="container-fluid py-5 mt-5 p-0 d-flex flex-wrap justify-content-center">
+
+          <div class="card bg-transparent border-0 justify-content-center align-items-center mx-3" style="width: 10rem;">
+            <img src="img/windowpc.png" class="w-75 card-img-top reveal" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-light fs-4 text-nowrap">WINDOWS PC</h5>
+            </div>
+          </div>
+
+          <div class="card bg-transparent border-0 justify-content-center align-items-center mx-3" style="width: 10rem;">
+            <img src="img/androidtv.png" class="w-75 card-img-top reveal" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-light fs-4 text-nowrap">ANDROID TV</h5>
+            </div>
+          </div>
+
+          <div class="card bg-transparent border-0 justify-content-center align-items-center mx-3" style="width: 10rem;">
+            <img src="img/chrome.png" class="w-75 card-img-top reveal" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-light fs-4 text-nowrap">CHROME</h5>
+            </div>
+          </div>
+
+          <div class="card bg-transparent border-0 justify-content-center align-items-center mx-3" style="width: 10rem;">
+            <img src="img/android.png" class="w-75 card-img-top reveal" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-light fs-4 text-nowrap">ANDROID</h5>
+            </div>
+          </div>
+
+          <div class="card bg-transparent border-0 justify-content-center align-items-center mx-3" style="width: 10rem;">
+            <img src="img/safari.png" class="w-75 card-img-top reveal" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-light fs-4 text-nowrap">SAFARI</h5>
+            </div>
+          </div>
+
+          <div class="card bg-transparent border-0 justify-content-center align-items-center mx-3" style="width: 10rem;">
+            <img src="img/edge.png" class="w-75 card-img-top reveal" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-light fs-4 text-nowrap">EDGE</h5>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn play-btn position-relative reveal">VIEW MORE</a>
+    </div>
+  </div>
+</div>
+
+<!-- ninth container ends -->
+
+
+<!-- tenth container starts -->
+
+  <div class="container-fluid py-5" style="background-color: rgb(12,13,17);">
+    <marquee behavior="scroll" direction="left">
+      <h1 class="text-light fw-bold text-uppercase display-1">esports in word now play the next generation cloud gaming</h1>
+    </marquee>
+  </div>
+
+<!-- tenth container ends -->
+
+
+<!-- eleventh container starts -->
+
+<div class="container-fluid overflow-hidden p-0">
+  <div class="container-fluid p-0" id="bg2">
+    <div class="container-fluid">
+      <div class="container-fluid col-xxl-12 px-4 py-5 position-relative">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-12 col-lg-6">
+            <div class="container d-flex align-items-center border-bottom pb-5">
+              <i class="fa-solid fa-headset display-1 me-5 reveal" style="color: rgb(128,94,240);"></i>
+              <div>
+              <h1 class="text-light fw-bold fs-2 reveal">HIGH-END GAMING</h1>
+            </div>
+            </div>
+            <div class="container d-flex align-items-center border-bottom pb-5 mt-5">
+              <i class="fa-solid fa-gamepad display-1 me-5 reveal" style="color: rgb(128,94,240);"></i>
+              <div>
+              <h1 class="text-light fw-bold fs-2 reveal">MULTIPLE DEVICE</h1>
+            </div>
+            </div>
+            <div class="container d-flex align-items-center border-bottom pb-5 mt-5">
+              <i class="fa-solid fa-mug-hot display-1 me-5 reveal" style="color: rgb(128,94,240);"></i>
+              <div>
+              <h1 class="text-light fw-bold fs-2 reveal">INSTANT PLAY</h1>
+            </div>
+            </div>
+            <div class="container d-flex align-items-center border-bottom pb-5 mt-5">
+              <i class="fa-solid fa-computer-mouse display-1 me-5 reveal" style="color: rgb(128,94,240);"></i>
+              <div>
+              <h1 class="text-light fw-bold fs-2 reveal">HIGH-END GAMING</h1>
+            </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pt-5">
+            <h1 class="display-4 fw-bold text-light lh-1 mb-3 py-5 reveal">CONNECT AND PLAY <br> YOUR GAMES</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- eleventh container ends -->
+
+
+<!-- twelth container starts -->
+
+  <div class="container-fluid py-5" style="background-color: rgb(12,13,17);">
+    <div class="container-fluid">
+    <h1 class="text-light fw-bold display-4 text-center">FREQUENTLY ASKED <br> QUESTIONS</h1>
+
+
+    <div class="accordion accordion-flush mt-5" style="background-color: rgb(12,13,17) !important;" id="accordionFlushExample">
+      <div class="accordion-item my-3" style="background-color: rgb(12,13,17) !important;">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-light fw-bold fs-4" style="background-color: rgb(12,13,17) !important;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            WHAT IS CLOUD GAMING ?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal exercitation.</div>
+        </div>
+      </div>
+      <div class="accordion-item my-3" style="background-color: rgb(12,13,17) !important;">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-light fw-bold fs-4" style="background-color: rgb(12,13,17) !important;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            HOW CAN I KNOW YOU ARE LEGIT, CAN I TRUST YOU ?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse bg-transparent" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-light bg-transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal exercitation.</div>
+        </div>
+      </div>
+      <div class="accordion-item my-3" style="background-color: rgb(12,13,17) !important;">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-light fw-bold fs-4" type="button" style="background-color: rgb(12,13,17) !important;" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            I DON'T LIKE THE PRICE, CAN I GET DISCOUNT?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-light bg-transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal exercitation.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!-- twelth container ends -->
+
+<!-- footer starts -->
+
+  <div class="container-fluid p-0" >
+    <div class="container-fluid text-light p-0 px-5" id="footerbg">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h3 class="mb-3">About</h3>
+            <ul class="nav flex-column" id="footera">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">How To Play</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Games</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing Plans</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Contact us</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h3 class="mb-3">Resources</h3>
+            <ul class="nav flex-column" id="footera">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Forums</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Recommended Products</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Quick Start Guide For Pc/Mac</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Quick Start Guide For Android</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h3 class="mb-3">Support</h3>
+            <ul class="nav flex-column" id="footera">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Service Status</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Download</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Faq</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Service Requirments</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Technical Support</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn play-btn rounded-2" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2023 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<!-- footer ends -->
+
+
+
+
+<!-- search popup starts -->
+
+  <div class="container-fluid position-absolute top-0 py-5" id="searchbar">
+    <div class="container py-5 w-100">
+      <div class="d-flex justify-content-center">
+        <input class="form-control me-2 w-50" id="searchinp" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn text-light" id="searchbtn" type="submit"><i data-feather="search"></i></button>
+        <button id="closebtn" onclick="closeBtn1()" class="btn text-light ms-5"><i data-feather="x"></i></button>
+      </div>
+    </div>
+  </div>
+
+<!-- search popup ends -->
+
+
+
+
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- feather script -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+
+
+        window.addEventListener('scroll', reveal);
+      function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+          }
+          else{
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+
+
+
+      function searchBar1(){
+        let searchPop = document.getElementById('searchbar').style.display = "block";
+
+        let scrollingBar = document.getElementById('scrolling').style.overflow = "hidden";
+
+        let blurMenu = document.getElementById('blur').style.filter = "blur(3px)"
+      }
+
+
+      function closeBtn1(){
+        let searchPop = document.getElementById('searchbar').style.display = "none";
+
+        let scrollingBar = document.getElementById('scrolling').style.overflow = "auto";
+
+        let blurMenu = document.getElementById('blur').style.filter = "blur(0px)"
+      }
+    </script>
+</body>
+</html>
